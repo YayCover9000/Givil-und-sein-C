@@ -13,7 +13,7 @@ int datentypen(void) {
     z = x + y +1;
     n = a/z;
 
-    printf("%f", n);
+    printf("%f\n", n);
 
     return 0;
 }
