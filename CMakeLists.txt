@@ -11,4 +11,5 @@ file(GLOB SOURCES
 
 # Executable erzeugen
 add_executable(main main.c ${SOURCES}
-        examplesForUnderstanding/konstanten.h)
+
+)
