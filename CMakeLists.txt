@@ -1,11 +1,13 @@
 cmake_minimum_required(VERSION 4.0)
-project(untitled C)
+project(givil_und_sein_C C)
 
+# Setze den C-Standard
 set(CMAKE_C_STANDARD 99)
 
-add_executable(untitled main.c
-        examplesForUnderstanding/C1.c
-        examplesForUnderstanding/C1.h
-        main.c
-        examplesForUnderstanding/C2.c
-        examplesForUnderstanding/C2.h)
+# main.c plus alle C-Dateien im Unterordner examplesForUnderstanding automatisch einbinden
+file(GLOB SOURCES
+        "examplesForUnderstanding/*.c"
+)
+
+# Executable erzeugen
+add_executable(main main.c ${SOURCES})

@@ -4,5 +4,5 @@
 
 #ifndef UNTITLED_C2_H
 #define UNTITLED_C2_H
-void make
+void natuerlicheZahlen(void);
 #endif //UNTITLED_C2_H
