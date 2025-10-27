@@ -11,7 +11,7 @@ int overflow() {
     short int b = SHRT_MAX;
     short int c = a + b;
 
-    printf("%d + %d = %d" , a, b, c);
+    printf("%d + %d = %d \n" , a, b, c);
 
     return 0;
 }

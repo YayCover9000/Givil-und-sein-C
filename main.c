@@ -6,9 +6,12 @@
 #include "examplesForUnderstanding/helloFromC1.h"
 #include "examplesForUnderstanding/natuerlicheZahlen.h"
 #include "examplesForUnderstanding/datentypen.h"
+#include "examplesForUnderstanding/gueltigkeitsbereich.h"
 #include "examplesForUnderstanding/konstanten.h"
 #include "examplesForUnderstanding/notsigned.h"
 #include "examplesForUnderstanding/overflow.h"
+#include "examplesForUnderstanding/hexaOverflow.h"
+#include "examplesForUnderstanding/gueltigkeitsbereich.h"
 int main(void) {
     helloFromC1();
     natuerlicheZahlen();
@@ -16,5 +19,7 @@ int main(void) {
     konstanten();
     notsigned();
     overflow();
+    hexaOverflow();
+    gueltigkeiten();
     return 0;
 }

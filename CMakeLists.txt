@@ -12,5 +12,9 @@ file(GLOB SOURCES
 # Executable erzeugen
 add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/overflow.c
+        examplesForUnderstanding/hexaOverflow.c
+        examplesForUnderstanding/hexaOverflow.h
+        examplesForUnderstanding/Gueltigkeitsbereich.c
+        examplesForUnderstanding/Gueltigkeitsbereich.h
 
 )
