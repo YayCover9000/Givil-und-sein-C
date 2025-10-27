@@ -36,3 +36,40 @@ int bitweiseOperatoren() {
 
     return 0;
 }
+
+/*
+*| Operator | Symbol                                | Bedeutung                                                          | Beispiel                                         |    |     |
+| -------- | ------------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------ | -- | --- |
+| **AND**  | `&`                                   | Bitweise **UND** — nur 1, wenn beide Bits 1 sind                   | `n & 35`                                         |    |     |
+| **OR**   | `                                     | `                                                                  | Bitweise **ODER** — 1, wenn eines der Bits 1 ist | `n | 10` |
+| **XOR**  | `^`                                   | Bitweise **exklusives ODER** — 1, wenn **nur eins** der Bits 1 ist | `n ^ 8`                                          |    |     |
+| **0xFF** | Hexadezimal für **255** → `1111.1111` | `n ^ 0xFF` invertiert die unteren 8 Bits                           |                                                  |    |     |
+
+ */
+
+int bitweiseOperation2() {
+    short int n = 61;
+
+    printf("AND &\n");
+    printBits(n);
+    printBits(35);
+    printBits(n & 35);
+
+    printf("OR |\n");
+    printBits(n);
+    printBits(10);
+    printBits(n | 10);
+
+    printf("XOR ^\n");
+    printBits(n);
+    printBits(8);
+    printBits(n ^ 8);
+
+    printf("XOR 0xFF ^\n");
+    printBits(n);
+    printBits(0xFF);
+    printBits(n ^ 0xFF);
+
+    return 0;
+}
+

@@ -31,5 +31,6 @@ int main(void) {
     vergleichsOperatoren();
     logischeOperatoren();
     bitweiseOperatoren();
+    bitweiseOperation2();
     return 0;
 }
