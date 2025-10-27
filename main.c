@@ -17,6 +17,9 @@
 #include "examplesForUnderstanding/vergleichsOperatoren.h"
 #include "examplesForUnderstanding/logischeOperatoren.h"
 #include "examplesForUnderstanding/bitweiseOperatoren.h"
+#include "examplesForUnderstanding/array.h"
+#include "examplesForUnderstanding/arrayError.h"
+#include "examplesForUnderstanding/literale.h"
 int main(void) {
     helloFromC1();
     natuerlicheZahlen();
@@ -32,5 +35,8 @@ int main(void) {
     logischeOperatoren();
     bitweiseOperatoren();
     bitweiseOperation2();
+    array();
+    arrayError();
+    literale();
     return 0;
 }

@@ -26,5 +26,11 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/logischeOperatoren.h
         examplesForUnderstanding/bitweiseOperatoren.c
         examplesForUnderstanding/bitweiseOperatoren.h
+        examplesForUnderstanding/array.c
+        examplesForUnderstanding/array.h
+        examplesForUnderstanding/arrayError.c
+        examplesForUnderstanding/arrayError.h
+        examplesForUnderstanding/literale.c
+        examplesForUnderstanding/literale.h
 
 )
