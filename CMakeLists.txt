@@ -22,5 +22,7 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/operatoren.h
         examplesForUnderstanding/vergleichsOperatoren.c
         examplesForUnderstanding/vergleichsOperatoren.h
+        examplesForUnderstanding/logischeOperatoren.c
+        examplesForUnderstanding/logischeOperatoren.h
 
 )

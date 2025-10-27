@@ -15,6 +15,7 @@
 #include "examplesForUnderstanding/casting.h"
 #include "examplesForUnderstanding/operatoren.h"
 #include "examplesForUnderstanding/vergleichsOperatoren.h"
+#include "examplesForUnderstanding/logischeOperatoren.h"
 int main(void) {
     helloFromC1();
     natuerlicheZahlen();
@@ -27,5 +28,6 @@ int main(void) {
     casting();
     operatoren();
     vergleichsOperatoren();
+    logischeOperatoren();
     return 0;
 }
