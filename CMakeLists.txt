@@ -18,5 +18,7 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/Gueltigkeitsbereich.h
         examplesForUnderstanding/casting.c
         examplesForUnderstanding/casting.h
+        examplesForUnderstanding/operatoren.c
+        examplesForUnderstanding/operatoren.h
 
 )

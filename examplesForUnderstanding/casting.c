@@ -4,22 +4,7 @@
 
 #include <stdio.h>
 
-/*
-*Arithmetische Operatoren
-• +, -, *, /, %
-• + und - als Vorzeichen
-• ++ und -- als In-/Dekrement
-• Vergleichsoperatoren
-• <,>,<=,>=,==, !=
-• Logische Operatoren
-• !, &&, ||
-• Bitweise Operatoren
-• ~, &, |, ^, <<, >>
-• Zuweisungsoperatoren
-• Kombination aus = und
-arithmetischem oder bitweisem
-Operator
- */
+
 
 int casting() {
     int x = 8;
