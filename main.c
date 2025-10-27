@@ -16,6 +16,7 @@
 #include "examplesForUnderstanding/operatoren.h"
 #include "examplesForUnderstanding/vergleichsOperatoren.h"
 #include "examplesForUnderstanding/logischeOperatoren.h"
+#include "examplesForUnderstanding/bitweiseOperatoren.h"
 int main(void) {
     helloFromC1();
     natuerlicheZahlen();
@@ -29,5 +30,6 @@ int main(void) {
     operatoren();
     vergleichsOperatoren();
     logischeOperatoren();
+    bitweiseOperatoren();
     return 0;
 }
