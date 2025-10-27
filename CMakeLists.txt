@@ -20,5 +20,7 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/casting.h
         examplesForUnderstanding/operatoren.c
         examplesForUnderstanding/operatoren.h
+        examplesForUnderstanding/vergleichsOperatoren.c
+        examplesForUnderstanding/vergleichsOperatoren.h
 
 )

@@ -6,10 +6,10 @@
 
 char global = 'g';
 
-int gueltigkeiten() {
+int gueltigkeitsbereich() {
 
     {
-        char lokal = 'l';
+        char lokal = '1';
         printf("%c \n", lokal);
     }
         printf("%c \n", global);

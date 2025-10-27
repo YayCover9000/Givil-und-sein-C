@@ -14,6 +14,7 @@
 #include "examplesForUnderstanding/gueltigkeitsbereich.h"
 #include "examplesForUnderstanding/casting.h"
 #include "examplesForUnderstanding/operatoren.h"
+#include "examplesForUnderstanding/vergleichsOperatoren.h"
 int main(void) {
     helloFromC1();
     natuerlicheZahlen();
@@ -22,8 +23,9 @@ int main(void) {
     notsigned();
     overflow();
     hexaOverflow();
-    gueltigkeiten();
+    gueltigkeitsbereich();
     casting();
     operatoren();
+    vergleichsOperatoren();
     return 0;
 }
