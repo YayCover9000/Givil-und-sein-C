@@ -16,5 +16,7 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/hexaOverflow.h
         examplesForUnderstanding/Gueltigkeitsbereich.c
         examplesForUnderstanding/Gueltigkeitsbereich.h
+        examplesForUnderstanding/casting.c
+        examplesForUnderstanding/casting.h
 
 )

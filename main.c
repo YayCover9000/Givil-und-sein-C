@@ -12,6 +12,7 @@
 #include "examplesForUnderstanding/overflow.h"
 #include "examplesForUnderstanding/hexaOverflow.h"
 #include "examplesForUnderstanding/gueltigkeitsbereich.h"
+#include "examplesForUnderstanding/casting.h"
 int main(void) {
     helloFromC1();
     natuerlicheZahlen();
@@ -21,5 +22,6 @@ int main(void) {
     overflow();
     hexaOverflow();
     gueltigkeiten();
+    casting();
     return 0;
 }
