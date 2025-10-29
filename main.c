@@ -20,6 +20,9 @@
 #include "examplesForUnderstanding/array.h"
 #include "examplesForUnderstanding/arrayError.h"
 #include "examplesForUnderstanding/literale.h"
+#include "examplesForUnderstanding/formats.h"
+#include "examplesForUnderstanding/escape.h"
+#include "examplesForUnderstanding/input.h"
 int main(void) {
     helloFromC1();
     natuerlicheZahlen();
@@ -38,5 +41,8 @@ int main(void) {
     array();
     arrayError();
     literale();
+    formats();
+    escape();
+    input();
     return 0;
 }

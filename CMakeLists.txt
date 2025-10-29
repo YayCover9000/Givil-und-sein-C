@@ -32,5 +32,11 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/arrayError.h
         examplesForUnderstanding/literale.c
         examplesForUnderstanding/literale.h
+        examplesForUnderstanding/formats.c
+        examplesForUnderstanding/formats.h
+        examplesForUnderstanding/escape.c
+        examplesForUnderstanding/escape.h
+        examplesForUnderstanding/input.c
+        examplesForUnderstanding/input.h
 
 )
