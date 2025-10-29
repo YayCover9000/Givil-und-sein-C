@@ -25,6 +25,7 @@
 #include "examplesForUnderstanding/input.h"
 #include "examplesForUnderstanding/input2.h"
 #include "examplesForUnderstanding/args.h"
+#include "examplesForUnderstanding/forloop.h"
 int main(int argc, char *argv[]) {
     /*
     helloFromC1();
@@ -50,5 +51,6 @@ int main(int argc, char *argv[]) {
     input2();
     */
     args(argc, argv);  // <-- richtiger Funktionsaufruf!
+    forloop();
     return 0;
 }

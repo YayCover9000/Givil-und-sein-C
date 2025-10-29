@@ -42,5 +42,7 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/input2.h
         examplesForUnderstanding/args.c
         examplesForUnderstanding/args.h
+        examplesForUnderstanding/forloop.c
+        examplesForUnderstanding/forloop.h
 
 )
