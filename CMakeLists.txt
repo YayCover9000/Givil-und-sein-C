@@ -38,5 +38,9 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/escape.h
         examplesForUnderstanding/input.c
         examplesForUnderstanding/input.h
+        examplesForUnderstanding/input2.c
+        examplesForUnderstanding/input2.h
+        examplesForUnderstanding/args.c
+        examplesForUnderstanding/args.h
 
 )

@@ -23,7 +23,10 @@
 #include "examplesForUnderstanding/formats.h"
 #include "examplesForUnderstanding/escape.h"
 #include "examplesForUnderstanding/input.h"
-int main(void) {
+#include "examplesForUnderstanding/input2.h"
+#include "examplesForUnderstanding/args.h"
+int main(int argc, char *argv[]) {
+    /*
     helloFromC1();
     natuerlicheZahlen();
     datentypen();
@@ -44,5 +47,8 @@ int main(void) {
     formats();
     escape();
     input();
+    input2();
+    */
+    args(argc, argv);  // <-- richtiger Funktionsaufruf!
     return 0;
 }
