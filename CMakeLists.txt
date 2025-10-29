@@ -48,5 +48,9 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/chess_rudementary.h
         examplesForUnderstanding/chess_complexer.c
         examplesForUnderstanding/chess_complexer.h
+        examplesForUnderstanding/ifStatement.c
+        examplesForUnderstanding/ifStatement.h
+        examplesForUnderstanding/switchCase1.c
+        examplesForUnderstanding/switchCase1.h
 
 )

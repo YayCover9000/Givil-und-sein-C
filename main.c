@@ -28,6 +28,7 @@
 #include "examplesForUnderstanding/forloop.h"
 #include "examplesForUnderstanding/chess_rudementary.h"
 #include "examplesForUnderstanding/chess_complexer.h"
+#include "examplesForUnderstanding/ifStatement.h"
 int main(int argc, char *argv[]) {
     /*
     helloFromC1();
@@ -56,5 +57,6 @@ int main(int argc, char *argv[]) {
     //forloop();
     //start_chess_rudementary();
     chess_complexer();
+    ifStatement();
     return 0;
 }
