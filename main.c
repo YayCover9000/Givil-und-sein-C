@@ -26,6 +26,8 @@
 #include "examplesForUnderstanding/input2.h"
 #include "examplesForUnderstanding/args.h"
 #include "examplesForUnderstanding/forloop.h"
+#include "examplesForUnderstanding/chess_rudementary.h"
+#include "examplesForUnderstanding/chess_complexer.h"
 int main(int argc, char *argv[]) {
     /*
     helloFromC1();
@@ -50,7 +52,9 @@ int main(int argc, char *argv[]) {
     input();
     input2();
     */
-    args(argc, argv);  // <-- richtiger Funktionsaufruf!
-    forloop();
+    //args(argc, argv);  // <-- richtiger Funktionsaufruf!
+    //forloop();
+    //start_chess_rudementary();
+    chess_complexer();
     return 0;
 }

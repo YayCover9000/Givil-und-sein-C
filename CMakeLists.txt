@@ -44,5 +44,9 @@ add_executable(main main.c ${SOURCES}
         examplesForUnderstanding/args.h
         examplesForUnderstanding/forloop.c
         examplesForUnderstanding/forloop.h
+        examplesForUnderstanding/chess_rudementary.c
+        examplesForUnderstanding/chess_rudementary.h
+        examplesForUnderstanding/chess_complexer.c
+        examplesForUnderstanding/chess_complexer.h
 
 )
