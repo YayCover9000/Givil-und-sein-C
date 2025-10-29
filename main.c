@@ -29,6 +29,7 @@
 #include "examplesForUnderstanding/chess_rudementary.h"
 #include "examplesForUnderstanding/chess_complexer.h"
 #include "examplesForUnderstanding/ifStatement.h"
+#include "examplesForUnderstanding/switchCase1.h"
 int main(int argc, char *argv[]) {
     /*
     helloFromC1();
@@ -56,7 +57,8 @@ int main(int argc, char *argv[]) {
     //args(argc, argv);  // <-- richtiger Funktionsaufruf!
     //forloop();
     //start_chess_rudementary();
-    chess_complexer();
-    ifStatement();
+    //chess_complexer();
+   // ifStatement();
+    switchCase1();
     return 0;
 }

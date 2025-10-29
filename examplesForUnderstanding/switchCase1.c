@@ -1,16 +1,46 @@
-//
-// Created by Yassuan Foljanty Catanzaro on 29.10.25.
-//
-
 #include <stdio.h>
+#include <string.h>
+#include <ctype.h>
 
-int switchCase1() {
+int switchCase1(void) {
     char in[256];
-    fgets(in, 256, stdin);
 
-    switch (in) {
-        case 1
+    // Prompt (optional)
+    // printf("Enter args (space-separated): ");
+
+    if (!fgets(in, sizeof in, stdin)) {
+        puts("No input.");
+        return 0;
     }
-    printf("Hallo %s", in);
+
+    // Strip newline(s)
+    in[strcspn(in, "\r\n")] = '\0';
+
+    // Count tokens (args) separated by whitespace
+    int count = 0;
+    for (char *p = in; *p;) {
+        while (*p && isspace((unsigned char)*p)) p++;   // skip spaces
+        if (*p) {
+            count++;
+            while (*p && !isspace((unsigned char)*p)) p++; // skip token
+        }
+    }
+
+    switch (count) {
+        case 0:
+            puts("No tokens entered.");
+            break;
+        case 1:
+            puts("One token entered.");
+            break;
+        case 2:
+            puts("Two tokens entered.");
+            break;
+        default:
+            printf("%d tokens entered.\n", count);
+            break;
+    }
+
+    printf("Hallo %s\n", in);
     return 0;
 }
