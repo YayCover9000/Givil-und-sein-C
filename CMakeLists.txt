@@ -1,56 +1,21 @@
-cmake_minimum_required(VERSION 4.0)
+cmake_minimum_required(VERSION 3.22)
 project(givil_und_sein_C C)
 
-# Setze den C-Standard
-set(CMAKE_C_STANDARD 99)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_EXTENSIONS OFF)
 
-# main.c plus alle C-Dateien im Unterordner examplesForUnderstanding automatisch einbinden
-file(GLOB SOURCES
-        "examplesForUnderstanding/*.c"
+file(GLOB EXAMPLE_SRCS CONFIGURE_DEPENDS
+        "${CMAKE_SOURCE_DIR}/examplesForUnderstanding/*.c"
 )
 
-# Executable erzeugen
-add_executable(main main.c ${SOURCES}
-        examplesForUnderstanding/overflow.c
-        examplesForUnderstanding/hexaOverflow.c
-        examplesForUnderstanding/hexaOverflow.h
-        examplesForUnderstanding/Gueltigkeitsbereich.c
-        examplesForUnderstanding/Gueltigkeitsbereich.h
-        examplesForUnderstanding/casting.c
-        examplesForUnderstanding/casting.h
-        examplesForUnderstanding/operatoren.c
-        examplesForUnderstanding/operatoren.h
-        examplesForUnderstanding/vergleichsOperatoren.c
-        examplesForUnderstanding/vergleichsOperatoren.h
-        examplesForUnderstanding/logischeOperatoren.c
-        examplesForUnderstanding/logischeOperatoren.h
-        examplesForUnderstanding/bitweiseOperatoren.c
-        examplesForUnderstanding/bitweiseOperatoren.h
-        examplesForUnderstanding/array.c
-        examplesForUnderstanding/array.h
-        examplesForUnderstanding/arrayError.c
-        examplesForUnderstanding/arrayError.h
-        examplesForUnderstanding/literale.c
-        examplesForUnderstanding/literale.h
-        examplesForUnderstanding/formats.c
-        examplesForUnderstanding/formats.h
-        examplesForUnderstanding/escape.c
-        examplesForUnderstanding/escape.h
-        examplesForUnderstanding/input.c
-        examplesForUnderstanding/input.h
-        examplesForUnderstanding/input2.c
-        examplesForUnderstanding/input2.h
-        examplesForUnderstanding/args.c
-        examplesForUnderstanding/args.h
-        examplesForUnderstanding/forloop.c
-        examplesForUnderstanding/forloop.h
-        examplesForUnderstanding/chess_rudementary.c
-        examplesForUnderstanding/chess_rudementary.h
-        examplesForUnderstanding/chess_complexer.c
-        examplesForUnderstanding/chess_complexer.h
-        examplesForUnderstanding/ifStatement.c
-        examplesForUnderstanding/ifStatement.h
-        examplesForUnderstanding/switchCase1.c
-        examplesForUnderstanding/switchCase1.h
-
+add_executable(main
+        "${CMAKE_SOURCE_DIR}/main.c"
+        ${EXAMPLE_SRCS}
 )
+
+target_include_directories(main PRIVATE
+        "${CMAKE_SOURCE_DIR}/examplesForUnderstanding"
+)
+
+# Optional: show what was picked up
+# message(STATUS "EXAMPLE_SRCS = ${EXAMPLE_SRCS}")
