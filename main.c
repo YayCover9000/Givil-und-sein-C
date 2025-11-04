@@ -1,74 +1,46 @@
-/// Linken mittels diese commands -> ergänzen wenn es mehr wird
-/// "cc main.c examplesForUnderstanding/*.c -o main"
-////// dqnn mit "./main" runnen
-
-// Must include weil sonst weiß C nicht wo schauen
-#include "examplesForUnderstanding/helloFromC1.h"
-#include "examplesForUnderstanding/natuerlicheZahlen.h"
-#include "examplesForUnderstanding/datentypen.h"
-#include "examplesForUnderstanding/gueltigkeitsbereich.h"
-#include "examplesForUnderstanding/konstanten.h"
-#include "examplesForUnderstanding/notsigned.h"
-#include "examplesForUnderstanding/overflow.h"
-#include "examplesForUnderstanding/hexaOverflow.h"
-#include "examplesForUnderstanding/gueltigkeitsbereich.h"
-#include "examplesForUnderstanding/casting.h"
-#include "examplesForUnderstanding/operatoren.h"
-#include "examplesForUnderstanding/vergleichsOperatoren.h"
-#include "examplesForUnderstanding/logischeOperatoren.h"
-#include "examplesForUnderstanding/bitweiseOperatoren.h"
-#include "examplesForUnderstanding/array.h"
-#include "examplesForUnderstanding/arrayError.h"
-#include "examplesForUnderstanding/literale.h"
-#include "examplesForUnderstanding/formats.h"
-#include "examplesForUnderstanding/escape.h"
-#include "examplesForUnderstanding/input.h"
-#include "examplesForUnderstanding/input2.h"
-#include "examplesForUnderstanding/args.h"
-#include "examplesForUnderstanding/forloop.h"
-#include "examplesForUnderstanding/chess_rudementary.h"
-#include "examplesForUnderstanding/chess_complexer.h"
-#include "examplesForUnderstanding/ifStatement.h"
-#include "examplesForUnderstanding/switchCase1.h"
-#include "examplesForUnderstanding/enumeration.h"
-#include "examplesForUnderstanding/doSmth.h"
+#include <stdio.h>
 #include "examplesForUnderstanding/zweiTeiler.h"
 #include "examplesForUnderstanding/primeZahl.h"
 #include "examplesForUnderstanding/facultaet.h"
-int main(int argc, char *argv[]) {
-    /*
-    helloFromC1();
-    natuerlicheZahlen();
-    datentypen();
-    konstanten();
-    notsigned();
-    overflow();
-    hexaOverflow();
-    gueltigkeitsbereich();
-    casting();
-    operatoren();
-    vergleichsOperatoren();
-    logischeOperatoren();
-    bitweiseOperatoren();
-    bitweiseOperation2();
-    array();
-    arrayError();
-    literale();
-    formats();
-    escape();
-    input();
-    input2();
-    */
-    //args(argc, argv);  // <-- richtiger Funktionsaufruf!
-    //forloop();
-    //start_chess_rudementary();
-    //chess_complexer();
-   // ifStatement();
-    //switchCase1();
-    //enumeration();
-    //doSmth();
-    //zweiTeiler();
-    primeZahl();
-    facultaet();
-    return 0;
+#include "examplesForUnderstanding/callByValue.h"
+#include "examplesForUnderstanding/callByReference.h"
+#include "examplesForUnderstanding/args_demo.h"
+#include "examplesForUnderstanding/array_demo.h"
+#include "examplesForUnderstanding/switchcase_demo.h"
+
+static void print_menu(void) {
+    puts("\n=== Demo-Menue ===");
+    puts(" 1) zweiTeiler (Teile durch 2 solange moeglich)");
+    puts(" 2) Primzahltest");
+    puts(" 3) Fakultät (rekursiv)");
+    puts(" 4) Call-by-Value");
+    puts(" 5) Call-by-Reference (Pointer)");
+    puts(" 6) Args-Demo (argc/argv)");
+    puts(" 7) Array & Pointerarithmetik");
+    puts(" 8) Switch/Case");
+    puts(" 0) Ende");
+    printf("Auswahl: ");
+}
+
+int main(int argc, char **argv) {
+    for (;;) {
+        int sel = -1;
+        print_menu();
+        if (scanf("%d", &sel) != 1) {
+            puts("Eingabefehler. Tschuess.");
+            return 0;
+        }
+        switch (sel) {
+            case 1: run_zweiTeiler(); break;
+            case 2: run_primeZahl(); break;
+            case 3: run_facultaet(); break;
+            case 4: run_callByValue(); break;
+            case 5: run_callByReference(); break;
+            case 6: run_args_demo(argc, argv); break;
+            case 7: run_array_demo(); break;
+            case 8: run_switchcase_demo(); break;
+            case 0: puts("Bye!"); return 0;
+            default: puts("Ungueltige Auswahl."); break;
+        }
+    }
 }
