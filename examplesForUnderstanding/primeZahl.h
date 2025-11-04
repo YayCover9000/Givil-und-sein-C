@@ -1,8 +1,7 @@
-//
-// Created by yfoljanty on 04/11/2025.
-//
+#ifndef PRIMEZAHL_H
+#define PRIMEZAHL_H
 
-#ifndef GIVIL_UND_SEIN_C_PRIMEZAHL_H
-#define GIVIL_UND_SEIN_C_PRIMEZAHL_H
-void primeZahl(void);
-#endif //GIVIL_UND_SEIN_C_PRIMEZAHL_H
+/* Interaktive Primzahl-Demo (fragt Zahl ab und meldet prim/kein prim). */
+void run_primeZahl(void);
+
+#endif
