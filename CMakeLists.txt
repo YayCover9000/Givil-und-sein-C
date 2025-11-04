@@ -19,6 +19,8 @@ add_executable(main
         examplesForUnderstanding/zweiTeiler.h
         examplesForUnderstanding/primeZahl.c
         examplesForUnderstanding/primeZahl.h
+        examplesForUnderstanding/facultaet.c
+        examplesForUnderstanding/facultaet.h
 )
 
 target_include_directories(main PRIVATE

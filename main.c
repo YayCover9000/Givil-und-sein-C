@@ -34,6 +34,7 @@
 #include "examplesForUnderstanding/doSmth.h"
 #include "examplesForUnderstanding/zweiTeiler.h"
 #include "examplesForUnderstanding/primeZahl.h"
+#include "examplesForUnderstanding/facultaet.h"
 int main(int argc, char *argv[]) {
     /*
     helloFromC1();
@@ -68,5 +69,6 @@ int main(int argc, char *argv[]) {
     //doSmth();
     //zweiTeiler();
     primeZahl();
+    facultaet();
     return 0;
 }
