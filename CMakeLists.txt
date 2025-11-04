@@ -11,6 +11,8 @@ file(GLOB EXAMPLE_SRCS CONFIGURE_DEPENDS
 add_executable(main
         "${CMAKE_SOURCE_DIR}/main.c"
         ${EXAMPLE_SRCS}
+        examplesForUnderstanding/enumeration.c
+        examplesForUnderstanding/enumeration.h
 )
 
 target_include_directories(main PRIVATE

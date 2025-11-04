@@ -6,7 +6,7 @@ int switchCase1(void) {
     char in[256];
 
     // Prompt (optional)
-    // printf("Enter args (space-separated): ");
+     printf("Enter args (space-separated): ");
 
     if (!fgets(in, sizeof in, stdin)) {
         puts("No input.");

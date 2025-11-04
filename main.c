@@ -30,6 +30,7 @@
 #include "examplesForUnderstanding/chess_complexer.h"
 #include "examplesForUnderstanding/ifStatement.h"
 #include "examplesForUnderstanding/switchCase1.h"
+#include "examplesForUnderstanding/enumeration.h"
 int main(int argc, char *argv[]) {
     /*
     helloFromC1();
@@ -59,6 +60,7 @@ int main(int argc, char *argv[]) {
     //start_chess_rudementary();
     //chess_complexer();
    // ifStatement();
-    switchCase1();
+    //switchCase1();
+    enumeration();
     return 0;
 }
