@@ -13,6 +13,8 @@ add_executable(main
         ${EXAMPLE_SRCS}
         examplesForUnderstanding/enumeration.c
         examplesForUnderstanding/enumeration.h
+        examplesForUnderstanding/doSmth.c
+        examplesForUnderstanding/doSmth.h
 )
 
 target_include_directories(main PRIVATE
