@@ -32,6 +32,7 @@
 #include "examplesForUnderstanding/switchCase1.h"
 #include "examplesForUnderstanding/enumeration.h"
 #include "examplesForUnderstanding/doSmth.h"
+#include "examplesForUnderstanding/zweiTeiler.h"
 int main(int argc, char *argv[]) {
     /*
     helloFromC1();
@@ -64,5 +65,6 @@ int main(int argc, char *argv[]) {
     //switchCase1();
     //enumeration();
     doSmth();
+    zweiTeiler();
     return 0;
 }

@@ -15,6 +15,8 @@ add_executable(main
         examplesForUnderstanding/enumeration.h
         examplesForUnderstanding/doSmth.c
         examplesForUnderstanding/doSmth.h
+        examplesForUnderstanding/zweiTeiler.c
+        examplesForUnderstanding/zweiTeiler.h
 )
 
 target_include_directories(main PRIVATE
