@@ -1,11 +1,5 @@
 #include <stdio.h>
 #include "primeZahl.h"
-
-/* Lokale Helferfunktion: effizienter Primzahltest.
- * - 0,1,negativ => nicht prim
- * - 2 => prim (einzige gerade Primzahl)
- * - gerade >2 => nicht prim
- * - prüfe nur ungerade Teiler bis sqrt(x) (i <= x/i) */
 static int isPrime(int x) {
     if (x <= 1) return 0;
     if (x == 2) return 1;
@@ -15,13 +9,9 @@ static int isPrime(int x) {
     }
     return 1;
 }
-
 void run_primeZahl(void) {
     int in;
     printf("Welche Zahl soll geprueft werden?: ");
-    if (scanf("%d", &in) != 1) {
-        puts("Ungueltige Eingabe.");
-        return;
-    }
+    if (scanf("%d", &in) != 1) { puts("Ungueltige Eingabe."); return; }
     printf(isPrime(in) ? "%d ist eine Primzahl.\n" : "%d ist keine Primzahl.\n", in);
 }
