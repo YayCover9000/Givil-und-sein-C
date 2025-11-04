@@ -31,6 +31,9 @@
 #include "examplesForUnderstanding/ifStatement.h"
 #include "examplesForUnderstanding/switchCase1.h"
 #include "examplesForUnderstanding/enumeration.h"
+#include "examplesForUnderstanding/doSmth.h"
+#include "examplesForUnderstanding/zweiTeiler.h"
+#include "examplesForUnderstanding/primeZahl.h"
 int main(int argc, char *argv[]) {
     /*
     helloFromC1();
@@ -61,6 +64,9 @@ int main(int argc, char *argv[]) {
     //chess_complexer();
    // ifStatement();
     //switchCase1();
-    enumeration();
+    //enumeration();
+    //doSmth();
+    //zweiTeiler();
+    primeZahl();
     return 0;
 }
