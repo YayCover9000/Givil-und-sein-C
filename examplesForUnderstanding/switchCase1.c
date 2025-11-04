@@ -1,46 +1,17 @@
 #include <stdio.h>
-#include <string.h>
-#include <ctype.h>
+#include "switchcase_demo.h"
 
-int switchCase1(void) {
-    char in[256];
-
-    // Prompt (optional)
-     printf("Enter args (space-separated): ");
-
-    if (!fgets(in, sizeof in, stdin)) {
-        puts("No input.");
-        return 0;
+void run_switchcase_demo(void) {
+    int wahl;
+    printf("Gib eine Zahl 1..3 ein: ");
+    if (scanf("%d", &wahl) != 1) {
+        puts("Ungueltige Eingabe.");
+        return;
     }
-
-    // Strip newline(s)
-    in[strcspn(in, "\r\n")] = '\0';
-
-    // Count tokens (args) separated by whitespace
-    int count = 0;
-    for (char *p = in; *p;) {
-        while (*p && isspace((unsigned char)*p)) p++;   // skip spaces
-        if (*p) {
-            count++;
-            while (*p && !isspace((unsigned char)*p)) p++; // skip token
-        }
+    switch (wahl) {
+        case 1: puts("Du hast 1 gewaehlt."); break;
+        case 2: puts("Du hast 2 gewaehlt."); break;
+        case 3: puts("Du hast 3 gewaehlt."); break;
+        default: puts("Ungueltige Wahl.");
     }
-
-    switch (count) {
-        case 0:
-            puts("No tokens entered.");
-            break;
-        case 1:
-            puts("One token entered.");
-            break;
-        case 2:
-            puts("Two tokens entered.");
-            break;
-        default:
-            printf("%d tokens entered.\n", count);
-            break;
-    }
-
-    printf("Hallo %s\n", in);
-    return 0;
 }

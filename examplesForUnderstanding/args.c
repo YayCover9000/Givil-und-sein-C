@@ -1,20 +1,9 @@
-//
-// Created by Yassuan Foljanty Catanzaro on 29.10.25.
-//
-
-/// make sure to go into the right directory
-/// cd /Users/yassuanfoljantycatanzaro/CLionProjects/givil-und-sein-C/cmake-build-debug
-/// ./main hallo test 42
-
 #include <stdio.h>
-#include "args.h"
+#include "args_demo.h"
 
-int args(int argc, char *argv[]) {
-    printf("Anzahl der Argumente = %d\n", argc);
-    printf("Name der exe = %s\n", argv[0]);
-
-    for (int i = 1; i < argc; i++) {
-        printf("arg%d\t= %s\n", i, argv[i]);
+void run_args_demo(int argc, char **argv) {
+    printf("argc = %d\n", argc);
+    for (int i = 0; i < argc; ++i) {
+        printf("argv[%d] = \"%s\"\n", i, argv[i]); // argv[i] zeigt auf C-String (char*)
     }
-    return 1337;
 }
