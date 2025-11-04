@@ -33,6 +33,7 @@
 #include "examplesForUnderstanding/enumeration.h"
 #include "examplesForUnderstanding/doSmth.h"
 #include "examplesForUnderstanding/zweiTeiler.h"
+#include "examplesForUnderstanding/primeZahl.h"
 int main(int argc, char *argv[]) {
     /*
     helloFromC1();
@@ -64,7 +65,8 @@ int main(int argc, char *argv[]) {
    // ifStatement();
     //switchCase1();
     //enumeration();
-    doSmth();
-    zweiTeiler();
+    //doSmth();
+    //zweiTeiler();
+    primeZahl();
     return 0;
 }

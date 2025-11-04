@@ -17,6 +17,8 @@ add_executable(main
         examplesForUnderstanding/doSmth.h
         examplesForUnderstanding/zweiTeiler.c
         examplesForUnderstanding/zweiTeiler.h
+        examplesForUnderstanding/primeZahl.c
+        examplesForUnderstanding/primeZahl.h
 )
 
 target_include_directories(main PRIVATE
